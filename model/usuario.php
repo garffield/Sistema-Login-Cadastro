@@ -1,6 +1,6 @@
 <?php
 
-require_once './config/database.php';
+require_once 'C:xampp/htdocs/Sistema-Login-Cadastro/config/database.php';
 
 
 class Usuario {

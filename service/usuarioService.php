@@ -1,6 +1,6 @@
 <?php
 
-require_once '../controller/usuarioController.php';
+require_once 'C:xampp/htdocs/Sistema-Login-Cadastro/controller/usuarioController.php';
 
     $acao = isset($_GET['acao']) ? $_GET['acao'] : '';
 
