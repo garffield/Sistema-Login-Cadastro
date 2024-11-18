@@ -18,6 +18,6 @@
 
     <input type="submit" placeholder="Cadastrar">
     
-    <p>Já possui Cadastro? <a href="formLogin.php" id="btn-register">Faça Login</a></p>
+    <p>Já possui Cadastro? <a href="./../index.php" id="btn-register">Faça Login</a></p>
 
 </form>

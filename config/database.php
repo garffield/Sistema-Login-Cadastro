@@ -2,7 +2,7 @@
 
 class database {
     const host = 'localhost';
-    const database = 'LoginCadastro';
+    const database = 'AtividadeLogin';
     const usuario = 'root';
     const senha = '';
     public $conexao;

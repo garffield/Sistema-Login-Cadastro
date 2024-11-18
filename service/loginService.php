@@ -1,16 +1,24 @@
 <?php
 
-require_once '../controller/loginController.php';
+require_once './controller/loginController.php';
 
-    // $acao = isset($_GET['acao']) ? $_GET['acao'] : '';
+    $acao = isset($_GET['acao']) ? $_GET['acao'] : '';
 
-    // switch ($acao) {
-    //     case 'logar':
-    //         if ($_POST['email'], $_POST['senha'],);
-    //     $novoLogin = new loginController();
-    //         break;
+    switch ($acao) {
+        case 'login':
+            if (isset($_POST['email'], $_POST['senha'])) {
+                $loginController = new loginController();
+                $loginController->login($_POST['email'], $_POST['senha']);
+            }
         
-    //     default:
-    //         # code...
-    //         break;
-    // }
+        // case 'logout':
+        //     if (isset($_POST['button']) && $_POST['button'] === 'logout') {
+        //         $loginController = new loginController();
+        //         $loginController->logout();
+        //     }
+        //     break;
+        
+        default:
+            # code...
+            break;
+    }

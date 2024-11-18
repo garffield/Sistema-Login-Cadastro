@@ -1,4 +1,4 @@
-<form action="../view/pageCadastro.php?acao=logar" id="form-login" method="post">
+<form action="../view/pageLogin.php?acao=login" id="form-login" method="post">
     <h1>Login</h1>
 
     <label for="email">Email:</label>
@@ -7,7 +7,7 @@
     <label for="password">Senha:</label>
     <input type="password" id="password" name="senha" required>
 
-    <input type="submit" placeholder="Cadastrar">
+    <input type="submit" placeholder="Logar">
 
-    <p id="faca-cadastro">Não possue login? <a href="formCadastro.php">Faça Cadastro</a></p>
+    <p id="faca-cadastro">Não possue login? <a href="view/pageCadastro.php">Faça Cadastro</a></p>
 </form>

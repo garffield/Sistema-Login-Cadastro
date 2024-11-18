@@ -7,9 +7,9 @@ require_once '../controller/usuarioController.php';
     switch ($acao) {
         case 'cadastrar':
             if (isset($_POST['nome'], $_POST['email'], $_POST['dataNasc'], $_POST['nome'], $_POST['senha'], $_POST['endereco']));
-            $novoUsuario = new usuarioController();
-            $novoUsuario->cadastrar($_POST['email'], $_POST['nome'], $_POST['senha'], $_POST['dataNasc'], $_POST['endereco']);
-            break;
+                $novoUsuario = new usuarioController();
+                $novoUsuario->cadastrar($_POST['email'], $_POST['nome'], $_POST['senha'], $_POST['dataNasc'], $_POST['endereco']);
+                break;
         
         default:
             # code...
