@@ -1,11 +1,11 @@
 <?php
 
-require_once '../model/cadastro.php';
+require_once '../model/usuario.php';
 require_once '../config/database.php';
 
-class cadastroController
+class usuarioController
 {
-    public $cadastro;
+    public $usuario;
     public $conexao;
 
     public function conectar()
@@ -18,9 +18,9 @@ class cadastroController
     {
 
         $this->conectar();
-        $cadastro = new Cadastro();
+        $usuario = new Usuario();
 
-        $query = $cadastro->cadastrar();
+        $query = $usuario->cadastrar();
 
         $stmt = $this->conexao->prepare($query);
 

@@ -2,7 +2,7 @@
 
 require_once '../config/database.php';
 
-class Cadastro {
+class Usuario {
     
 
     public $email;
@@ -15,7 +15,7 @@ class Cadastro {
 
     public $dataNasc;
     public $endereco;
-    public $tabela = 'cadastro';
+    public $tabela = 'usuario';
 
     public function __construct(){
        

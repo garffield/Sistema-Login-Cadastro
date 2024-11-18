@@ -1,4 +1,4 @@
 <?php
 
 include ("formCadastro.php");
-include ("../service/cadastroService.php");
+include ("../service/usuarioService.php");
