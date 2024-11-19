@@ -20,4 +20,8 @@ class database {
         return $this->conexao->prepare($query);
     }
 
+    public function store_result($query) {
+        return $this->conexao->store_result($query);
+    }
+
 }

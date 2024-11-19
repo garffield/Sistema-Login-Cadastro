@@ -19,6 +19,5 @@ require_once 'C:xampp/htdocs/Sistema-Login-Cadastro/controller/loginController.p
         //     break;
         
         default:
-            # code...
             break;
     }

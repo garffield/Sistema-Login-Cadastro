@@ -1,4 +1,4 @@
-<form action="./view/pageLogin.php?acao=login" id="form-login" method="post">
+<form action="view/pageLogin.php?acao=login" id="form-login" method="post">
     <h1>Login</h1>
 
     <label for="email">Email:</label>

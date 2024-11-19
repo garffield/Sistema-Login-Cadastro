@@ -33,30 +33,32 @@ class loginController
         if ($resultado->num_rows == 0) {
             $_SESSION['erro_login'] = "Usuário não encontrado";
             echo "<script>alert('Erro! Usuario ou Senha estão incorretos')</script>";
-            header("Location: ./view/pageLogin.php");
+            header("Location: ../index.php");
             $stmt->close();
             exit();
         }
         
-        $usuario = $resultado->fetch_all();
+        $usuario = $resultado->fetch_assoc();
         $stmt->close();
         
+       
         if (password_verify($senha, $usuario['senha'])) {
             $_SESSION['usuario_email'] = $usuario['email'];
             $_SESSION['usuario_id'] = $usuario['id_usuario'];
-            header("Location: ./view/pageHome.php");
+            header("Location: ../view/pageHome.php");
             exit();
         } else {
             $_SESSION['erro_login'] = "Senha ou email incorretos!";
-            header("Location: ./view/pageLogin.php");
+            // header("Location: ./view/pageLogin.php");
             exit();
         }
     }
-
+    
     public function logout() {
         session_unset();
         session_destroy();
-        header("Location: ../index.php");
+        // header("Location: ../index.php");
         exit();
     }
+
 }
