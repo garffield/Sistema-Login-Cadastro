@@ -1,6 +1,10 @@
-# Sistema-Login-Cadastro
-create database AtividadeLogin;
-use AtividadeLogin;
+# Sistema de login e cadastro
+
+
+DataBase MySQL
+```SQL
+create database systemLogin;
+use systemLogin;
 
 create table usuario(
     id_usuario int auto_increment not null primary key,
@@ -10,3 +14,4 @@ create table usuario(
     senha varchar(60) not null,
     endereco varchar(200) not null
 )
+```
